@@ -34,8 +34,6 @@
         :debate="debateObj"
       />
 
-      <analysis v-if="hasAnalysis" :debate="debateObj" />
-
       <!-- Load More Arguments Button -->
       <button v-if="argumentsLimit < debateObj.arguments.length"
               class="btn w-100"
@@ -43,6 +41,8 @@
               @click="loadMoreArguments">
         View more arguments
       </button>
+
+      <analysis v-if="hasAnalysis" :debate="debateObj" />
 
       <!-- Add New Argument -->
       <div v-if="status !== 'closed'" class="d-flex flex-column row-gap-2">

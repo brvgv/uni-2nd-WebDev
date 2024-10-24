@@ -6,12 +6,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
       "
     >
       <b-card-title style="color: #007769" class=".rubik-text fw-semibold"
         >Welcome back! 👋</b-card-title
       >
-      <b-form @submit.prevent="login" class="form">
+      <b-form @submit.prevent="login" class="form" style="width: 100%;">
         <b-input type="email" v-model="user.email" placeholder="Email" />
         <b-input
           type="password"

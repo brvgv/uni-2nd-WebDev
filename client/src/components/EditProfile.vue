@@ -279,7 +279,6 @@ export default {
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
-  z-index: 1000;
   transition: opacity 0.3s ease, top 0.3s ease;
 }
 
